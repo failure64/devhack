@@ -1,7 +1,9 @@
-import React from 'react';
+import React, { useState } from 'react';
 import styles from "@/styles/AuthForm.module.css";
 import Avatar from "public/profile.png"
 import Image from 'next/image';
+import { useRouter } from 'next/router';
+import axios from 'axios';
 
 const UserForm = () => {
   const [number, setNumber] = useState("");
@@ -34,7 +36,7 @@ const UserForm = () => {
       const res = await axios.post("/api/signup_user", body, config);
       localStorage.setItem("token", res.data);
       alert("Recruiter registered successfully");
-      router.push("/");
+      router.push("/home");
     } catch (err) {
       console.error(err.message);
       alert("Something went wrong!!");
@@ -42,7 +44,7 @@ const UserForm = () => {
     }
   };
   return (
-    <form className={styles.form}>
+    <form className={styles.form} onSubmit={registerSubmit}>
       <Image src={Avatar} alt="image" />
 
       <div className={styles.flex_cont}>
@@ -77,7 +79,7 @@ const UserForm = () => {
         </div>
       </div>
 
-      <button>Create Account</button>
+      <button type='submit'>Create Account</button>
     </form>
   );
 }
