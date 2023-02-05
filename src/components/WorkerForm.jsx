@@ -36,6 +36,7 @@ const WorkerForm = () => {
 
     } catch (err) {
       console.error(err.message);
+      alert("Something went wrong!!");
       throw err;
     }
   };
