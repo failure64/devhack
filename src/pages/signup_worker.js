@@ -3,7 +3,7 @@ import Navbar from "@/components/Navbar";
 import styles from "@/styles/AuthPage.module.css";
 import WorkerForm from '@/components/WorkerForm';
 
-const signup_worker = () => {
+const Signup_worker = () => {
   return (
     <>
       <Navbar />
@@ -14,4 +14,4 @@ const signup_worker = () => {
   );
 }
 
-export default signup_worker
+export default Signup_worker;

@@ -3,7 +3,7 @@ import React from "react";
 import styles from "@/styles/AuthPage.module.css";
 import LoginForm from "@/components/LoginForm";
 
-const login = () => {
+const Login = () => {
   return (
     <>
       <Navbar />
@@ -14,4 +14,4 @@ const login = () => {
   );
 };
 
-export default login;
+export default Login;

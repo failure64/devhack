@@ -1,10 +1,10 @@
 import Navbar from '@/components/Navbar'
-import React, { useEffect, useState } from 'react'
+import React, { useEffect, useState } from "react"
 import styles from "@/styles/Explore.module.css";
 import Avatar from "public/profile2.png"
 import Image from 'next/image';
 
-const plumbers = () => {
+const Plumbers = () => {
   const [data, setData] = useState(null);
   const [isLoading, setLoading] = useState(false);
 
@@ -63,4 +63,4 @@ const plumbers = () => {
   );
 }
 
-export default plumbers
+export default Plumbers;

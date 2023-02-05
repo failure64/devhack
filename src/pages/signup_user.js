@@ -3,7 +3,7 @@ import UserForm from '@/components/UserForm'
 import React from 'react'
 import styles from "@/styles/AuthPage.module.css";
 
-const signup_user = () => {
+const Signup_user = () => {
   return (
       <>
         <Navbar/>
@@ -14,4 +14,4 @@ const signup_user = () => {
   )
 }
 
-export default signup_user
+export default Signup_user;
