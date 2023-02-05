@@ -31,7 +31,9 @@ const WorkerForm = () => {
     try {
       const res = await axios.post("/api/signup_worker", body, config);
       localStorage.setItem("token", res.data);
-      router.push("/home");
+      alert("Worker registered successfully");
+      router.push("/");
+
     } catch (err) {
       console.error(err.message);
       throw err;

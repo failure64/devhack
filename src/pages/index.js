@@ -17,11 +17,11 @@ export default function Home() {
             <Link href={"/login"}>
               <button>Login</button>
             </Link>
-            <Link href="/signup_user">
-              <button className={styles.user_btn}>Signup as User</button>
-            </Link>
             <Link href="/signup_worker">
               <button className={styles.user_btn}>Signup as Worker</button>
+            </Link>
+            <Link href="/signup_user">
+              <button className={styles.user_btn}>Signup as Recruiter</button>
             </Link>
           </div>
           <div className={styles.quotes_section}>
