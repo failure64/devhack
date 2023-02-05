@@ -21,12 +21,8 @@ const UserForm = () => {
 
       <div className={styles.flex_cont}>
         <div className={styles.lable_input}>
-          <label>Work Type</label>
-          <select>
-            <option>Labour</option>
-            <option>Driver</option>
-            <option>Plumber</option>
-          </select>
+          <label>UPI Id*</label>
+          <input placeholder="UPI Id" />
         </div>
         <div className={styles.lable_input}>
           <label>Password*</label>
@@ -34,16 +30,6 @@ const UserForm = () => {
         </div>
       </div>
 
-      <div className={styles.flex_cont}>
-        <div className={styles.lable_input}>
-          <label>Address*</label>
-          <input placeholder="Address" />
-        </div>
-        <div className={styles.lable_input}>
-          <label>UPI Id*</label>
-          <input placeholder="UPI Id" />
-        </div>
-      </div>
 
       <button>Create Account</button>
     </form>
